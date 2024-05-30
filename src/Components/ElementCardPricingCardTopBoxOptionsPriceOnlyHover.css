@@ -1,0 +1,31 @@
+
+.ElementCardPricingCardTopBoxOptionsPriceOnlyHover_ElementCardPricingCardTopBoxOptionsPriceOnlyHover {
+	width: 350px;
+	height: 110px;
+}
+.ElementCardPricingCardTopBoxOptionsPriceOnlyHover_ElementCardPricingCardTopBoxOptionsPriceOnlyHover .outline {
+	position: absolute;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 350px;
+	height: 110px;
+	background: rgba(17,27,71,1.00);
+	border-radius: 2px;
+}
+.ElementCardPricingCardTopBoxOptionsPriceOnlyHover_ElementCardPricingCardTopBoxOptionsPriceOnlyHover .Price {
+	position: absolute;
+	margin-left: 0px;
+	margin-right: 0px;
+	top: 50%;
+	transform: translate(0, -50%);
+	width: 350px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	font-family: Roboto;
+	font-size: 42px;
+	font-weight: 500;
+	line-height: 60px;
+}
