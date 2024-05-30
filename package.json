@@ -15,9 +15,10 @@
     "styled-components": "^5.3.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "/sicr.github.io",
   "scripts": {
     "start": "react-scripts --max_old_space_size=4096 start --openssl-legacy-provider",
-    "build": "react-scripts build",
+    "build": "react-scripts build&&rm -rfv ./docs&&mv -v ./build ./docs",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

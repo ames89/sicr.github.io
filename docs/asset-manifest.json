@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.da159e16.css",
-    "main.js": "/static/js/main.f19e8d31.js",
-    "static/media/LandingPage1440_image1.png": "/static/media/LandingPage1440_image1.7fc7bb86f4f857e03079.png",
-    "static/media/LandingPage1440_Path_2.png": "/static/media/LandingPage1440_Path_2.46296d86116268c2ea77.png",
-    "static/media/LandingPage1024_Path_2.png": "/static/media/LandingPage1024_Path_2.c33ea9a2bd4abe536784.png",
-    "static/media/LandingPage1440_Rectangle_112.png": "/static/media/LandingPage1440_Rectangle_112.2b3055f0710bbea24ef5.png",
-    "static/media/LandingPage1440_Path.png": "/static/media/LandingPage1440_Path.c5b9ac057c7109f41fdf.png",
-    "static/media/LandingPage1024_Rectangle_110.png": "/static/media/LandingPage1024_Rectangle_110.ecfdc4e2f97bfadcad8d.png",
-    "static/media/LandingPage1024_Path.png": "/static/media/LandingPage1024_Path.c6d5b346fa97b4040b89.png",
-    "index.html": "/index.html",
-    "main.da159e16.css.map": "/static/css/main.da159e16.css.map",
-    "main.f19e8d31.js.map": "/static/js/main.f19e8d31.js.map"
+    "main.css": "/sicr.github.io/static/css/main.da159e16.css",
+    "main.js": "/sicr.github.io/static/js/main.079f9fff.js",
+    "static/media/LandingPage1440_image1.png": "/sicr.github.io/static/media/LandingPage1440_image1.7fc7bb86f4f857e03079.png",
+    "static/media/LandingPage1440_Path_2.png": "/sicr.github.io/static/media/LandingPage1440_Path_2.46296d86116268c2ea77.png",
+    "static/media/LandingPage1024_Path_2.png": "/sicr.github.io/static/media/LandingPage1024_Path_2.c33ea9a2bd4abe536784.png",
+    "static/media/LandingPage1440_Rectangle_112.png": "/sicr.github.io/static/media/LandingPage1440_Rectangle_112.2b3055f0710bbea24ef5.png",
+    "static/media/LandingPage1440_Path.png": "/sicr.github.io/static/media/LandingPage1440_Path.c5b9ac057c7109f41fdf.png",
+    "static/media/LandingPage1024_Rectangle_110.png": "/sicr.github.io/static/media/LandingPage1024_Rectangle_110.ecfdc4e2f97bfadcad8d.png",
+    "static/media/LandingPage1024_Path.png": "/sicr.github.io/static/media/LandingPage1024_Path.c6d5b346fa97b4040b89.png",
+    "index.html": "/sicr.github.io/index.html",
+    "main.da159e16.css.map": "/sicr.github.io/static/css/main.da159e16.css.map",
+    "main.079f9fff.js.map": "/sicr.github.io/static/js/main.079f9fff.js.map"
   },
   "entrypoints": [
     "static/css/main.da159e16.css",
-    "static/js/main.f19e8d31.js"
+    "static/js/main.079f9fff.js"
   ]
 }
