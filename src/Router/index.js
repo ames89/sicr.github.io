@@ -9,11 +9,12 @@ import ElementCardPricingCardTopBoxOptionsPriceSubtitleHover from '../Components
 import ElementCardPricingCardTopBoxOptionsPriceOnlyHover from '../Components/ElementCardPricingCardTopBoxOptionsPriceOnlyHover';
 import ElementCardFAQBasicMedium1LineTitle from '../Components/ElementCardFAQBasicMedium1LineTitle';
 import ElementCardFAQBasicMedium2LineTitle from '../Components/ElementCardFAQBasicMedium2LineTitle';
+
 const RouterDOM = () => {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/"><HomePage /></Route>
+				<Route exact path="/"><LandingPage1024 /></Route>
 				<Route exact path="/landingpage1440"><LandingPage1440 /></Route>
 				<Route exact path="/landingpage1024"><LandingPage1024 /></Route>
 				<Route exact path="/elementcardpricingcardtopboxoptionspriceonlydefault"><ElementCardPricingCardTopBoxOptionsPriceOnlyDefault /></Route>
