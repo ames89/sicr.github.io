@@ -1,0 +1,87 @@
+@import "/src/scss/media-queries.scss";
+
+.container {
+  margin: 0 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.texts {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+}
+
+.img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./frame.svg");
+}
+
+.title {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.p {
+  text-align: justify;
+}
+
+@include viewport-mobile {
+  .container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./frame.svg");
+    background-size: cover;
+  }
+
+  .container1 {
+    background-color: #ffffffc9;
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .it1 {
+    order: 1;
+    align-items: center;
+  }
+
+  .it2 {
+    order: 2;
+  }
+
+  .it3 {
+    order: 3;
+    align-items: center;
+  }
+
+  .it4 {
+    order: 4;
+  }
+
+  .Desktop {
+    display: none;
+  }
+}

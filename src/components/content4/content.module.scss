@@ -1,0 +1,59 @@
+@import "/src/scss/media-queries.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 0 40px;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./img.svg");
+  background-size: contain;
+  min-height: 300px;
+}
+
+.textContent {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.p {
+  text-align: justify;
+}
+
+.button {
+  border: 1px solid #0e3a0a;
+  background: #fff2d2;
+  font-size: 14px;
+  color: #0e3a0a;
+  max-width: 100px;
+}
+
+@include viewport-mobile {
+  .Desktop {
+    display: none;
+  }
+
+  .container {
+    background-image: url("./img.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 1;
+  }
+
+  .textContent {
+    background-color: #ffffffc9;
+    min-height: 300px;
+    justify-content: center;
+  }
+}

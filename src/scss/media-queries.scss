@@ -1,0 +1,25 @@
+$media-width-tablet: 990px;
+
+@mixin viewport-mobile {
+  @media (max-width: $media-width-tablet) {
+    @content;
+  }
+}
+
+@mixin viewport-desktop {
+  @media not all and (max-width: $media-width-tablet) {
+    @content;
+  }
+}
+
+@mixin touch-device {
+  @media (hover: none) and (pointer: coarse), (-moz-touch-enabled: 1) {
+    @content;
+  }
+}
+
+@mixin non-touch-device {
+  @media (hover: hover) and (pointer: fine), (-moz-touch-enabled: 0) {
+    @content;
+  }
+}

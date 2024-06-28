@@ -1,0 +1,52 @@
+@import "/src/scss/media-queries.scss";
+
+.container1 {
+}
+
+.container1_1 {
+  background-color: #fdf8e8;
+  justify-content: center;
+  display: flex;
+}
+
+.container2 {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.header1 {
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #0e3a0a;
+}
+
+.p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+  color: #296a2f;
+}
+
+.cubes {
+  background-image: url("./cube.svg");
+  background-repeat: repeat-x;
+  height: 55px;
+  width: 100%;
+}
+
+.header2 {
+  color: #0e3a0a;
+  font-size: 50px;
+  letter-spacing: 1px;
+  line-height: 66px;
+  text-align: center;
+}
+
+@include viewport-mobile {
+  .Desktop {
+    display: none;
+  }
+}
