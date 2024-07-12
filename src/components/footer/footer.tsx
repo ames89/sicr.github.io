@@ -1,3 +1,4 @@
+import { joinClasses } from "../../utils/utils";
 import css from "./footer.module.scss";
 
 export const Footer = () => {
@@ -16,6 +17,9 @@ export const Footer = () => {
             ¡Participa!
           </p>
           <h2 className={css.header2}>Pronto más información</h2>
+          <button className={joinClasses("button", css.button)}>
+            SUSCRIBIRSE
+          </button>
         </div>
       </div>
     </div>
