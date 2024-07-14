@@ -5,7 +5,7 @@ import {
   Content3,
   Content4,
   Content5,
-  Footer,
+  Content6,
   Header,
 } from "./components";
 
@@ -18,7 +18,7 @@ const App = () => {
       <Content3 />
       <Content4 />
       <Content5 />
-      <Footer />
+      <Content6 />
     </div>
   );
 };

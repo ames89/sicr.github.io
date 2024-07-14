@@ -1,9 +1,9 @@
 import { joinClasses } from "../../utils/utils";
-import css from "./footer.module.scss";
+import css from "./content.module.scss";
 
-export const Footer = () => {
+export const Content6 = () => {
   return (
-    <div className={css.container1}>
+    <div>
       <div className={css.cubes} />
       <div className={css.container1_1}>
         <div className={css.container2}>
@@ -20,6 +20,25 @@ export const Footer = () => {
           <button className={joinClasses("button", css.button)}>
             SUSCRIBIRSE
           </button>
+        </div>
+      </div>
+      <div className={css.footer}>
+        <div>
+          <div className={css.column}>
+            <div className={css.row}>
+              <span>©2024</span>
+              <span>Principal</span>
+            </div>
+            <div className={css.hSeparator}></div>
+            <div className={css.row}>
+              <div className={css.links}>
+                <div>Principal</div>
+                <div>Acerca</div>
+                <div>Contacto</div>
+              </div>
+              <div className={css.icons}></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,5 @@
 @import "/src/scss/media-queries.scss";
 
-.container1 {
-}
-
 .button {
   align-self: center;
 }
@@ -11,6 +8,7 @@
   background-color: #fdf8e8;
   justify-content: center;
   display: flex;
+  padding-bottom: 40px;
 }
 
 .container2 {
@@ -47,6 +45,14 @@
   letter-spacing: 1px;
   line-height: 66px;
   text-align: center;
+}
+
+.footer {
+  align-items: center;
+  background: #fff2d2;
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
 }
 
 @include viewport-mobile {
