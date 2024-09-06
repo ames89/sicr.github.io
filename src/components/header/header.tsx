@@ -9,6 +9,13 @@ export const Header = () => {
             <span>Inicio</span>
             <span>Acerca</span>
             <span>Contacto</span>
+            <a
+              href="#SICR_Datos"
+              style={{
+                color: "inherit",
+              }}>
+              SICR
+            </a>
           </div>
           <button className={css.Desktop}>únetenos</button>
         </header>

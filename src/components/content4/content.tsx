@@ -8,7 +8,7 @@ export const Content4 = () => {
       <div className={joinClasses(css.content, css.textContent)}>
         <h2 className={css.title}>Únetenos</h2>
         <p className={css.p}>
-          Te invitamos a unirte a nuestro innovador proyecto de ptimización
+          Te invitamos a unirte a nuestro innovador proyecto de optimización
           predictiva de residuos. Con tu participación, podemos avanzar hacia
           una Costa Rica más sostenible, aprovechar la inteligencia artificial
           para mejorar la gestión de residuos y fomentar la economía circular.

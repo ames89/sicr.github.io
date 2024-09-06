@@ -1,4 +1,4 @@
-import { joinClasses } from "../../utils/utils";
+import {joinClasses} from "../../utils/utils";
 import css from "./content.module.scss";
 
 export const Content6 = () => {

@@ -5,3 +5,4 @@ export * from "./content3";
 export * from "./content4";
 export * from "./content5";
 export * from "./content6";
+export * from "./power-bi-widget";

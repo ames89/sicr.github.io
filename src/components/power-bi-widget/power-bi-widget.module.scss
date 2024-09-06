@@ -1,0 +1,14 @@
+@import "/src/scss/media-queries.scss";
+
+.container {
+  background: linear-gradient(128deg, #04b250, #542437);
+  width: 100%;
+  height: 546px;
+  display: flex;
+  align-items: center;
+}
+
+.frame {
+  width: 100%;
+  height: 542px;
+}

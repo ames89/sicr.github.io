@@ -7,6 +7,7 @@ import {
   Content5,
   Content6,
   Header,
+  PowerBIWidget,
 } from "./components";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Content3 />
       <Content4 />
       <Content5 />
+      <PowerBIWidget />
       <Content6 />
     </div>
   );
