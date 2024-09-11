@@ -1,4 +1,5 @@
-import {joinClasses} from "../../utils/utils";
+import { joinClasses } from "../../utils/utils";
+import { MailtoContent } from "../utils/data";
 import css from "./content.module.scss";
 
 export const Content6 = () => {
@@ -16,29 +17,35 @@ export const Content6 = () => {
             impacto positivo en nuestra comunidad y el medio ambiente.
             ¡Participa!
           </p>
-          <h2 className={css.header2}>Pronto más información</h2>
-          <button className={joinClasses("button", css.button)}>
-            SUSCRIBIRSE
-          </button>
+          <h2 className={css.header2}>Para más información</h2>
+          <a
+            href={MailtoContent}
+            target="_blank"
+            className={joinClasses("button", css.button)}
+          >
+            Solicitar información
+          </a>
         </div>
       </div>
       <div className={css.footer}>
-        <div>
-          <div className={css.column}>
-            <div className={css.row}>
-              <span>©2024</span>
-              <span>Principal</span>
-            </div>
-            <div className={css.hSeparator}></div>
-            <div className={css.row}>
-              <div className={css.links}>
-                <div>Principal</div>
-                <div>Acerca</div>
-                <div>Contacto</div>
-              </div>
-              <div className={css.icons}></div>
-            </div>
-          </div>
+        <span>©2024</span>
+        <div className={css.rightFooter}>
+          <a className={css.link} href="#top">
+            Principal
+          </a>
+          <a className={css.link} href="#acerca">
+            Acerca
+          </a>
+          <a target="_blank" className={css.link} href={MailtoContent}>
+            Contacto
+          </a>
+          <a
+            target="_blank"
+            className={css.link}
+            href="https://www.instagram.com/sicr.ai"
+          >
+            Instagram
+          </a>
         </div>
       </div>
     </div>

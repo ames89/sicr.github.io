@@ -2,42 +2,49 @@
 
 .button {
   align-self: center;
+  background-color: #0e3a0a;
+  border-radius: 5px;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .container1_1 {
   background-color: #fdf8e8;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   padding-bottom: 40px;
 }
 
 .container2 {
   display: flex;
-  gap: 30px;
   flex-direction: column;
+  gap: 30px;
   max-width: 600px;
+  padding: 0 40px;
 }
 
 .header1 {
+  color: #0e3a0a;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
-  color: #0e3a0a;
 }
 
 .p {
-  text-align: justify;
+  color: #296a2f;
   font-size: 16px;
   line-height: 26px;
-  color: #296a2f;
+  text-align: justify;
 }
 
 .cubes {
   background-image: url("./cube.svg");
   background-repeat: repeat-x;
   height: 55px;
-  width: 100%;
   margin-bottom: -2px;
+  width: 100%;
 }
 
 .header2 {
@@ -52,8 +59,18 @@
   align-items: center;
   background: #fff2d2;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 60px 0;
+}
+
+.rightFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.link {
+  color: inherit;
 }
 
 @include viewport-mobile {

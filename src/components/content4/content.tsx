@@ -1,4 +1,5 @@
 import { joinClasses } from "../../utils/utils";
+import { MailtoContent } from "../utils/data";
 import css from "./content.module.scss";
 
 export const Content4 = () => {
@@ -16,7 +17,9 @@ export const Content4 = () => {
           un impacto positivo en nuestra comunidad y el medio ambiente. Únete a
           nosotros y sé parte del cambio hacia un futuro más verde y próspero.
         </p>
-        <button className={css.button}>UNIRSE</button>
+        <a target="_blank" href={MailtoContent} className={css.button}>
+          UNIRSE
+        </a>
       </div>
     </div>
   );

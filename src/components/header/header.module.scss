@@ -1,5 +1,9 @@
 @import "/src/scss/media-queries.scss";
 
+.link {
+  color: inherit;
+}
+
 .bgContainer {
   background-repeat: no-repeat;
   background-position: right;
@@ -84,6 +88,15 @@
   text-transform: uppercase;
   color: #0e3a0a;
   background-color: white;
+}
+
+.buttonSuscribe {
+  background-color: #0e3a0a;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 @include viewport-mobile {

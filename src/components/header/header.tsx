@@ -1,3 +1,4 @@
+import { MailtoContent } from "../utils/data";
 import css from "./header.module.scss";
 
 export const Header = () => {
@@ -6,14 +7,13 @@ export const Header = () => {
       <div className={css.container}>
         <header className={css.appHeader}>
           <div className={css.headerLeft}>
-            <span>Inicio</span>
-            <span>Acerca</span>
-            <span>Contacto</span>
-            <a
-              href="#SICR_Datos"
-              style={{
-                color: "inherit",
-              }}>
+            <a href="#acerca" className={css.link}>
+              Acerca
+            </a>
+            <a target="_blank" href={MailtoContent} className={css.link}>
+              Contacto
+            </a>
+            <a href="#SICR_Datos" className={css.link}>
               SICR
             </a>
           </div>
@@ -37,8 +37,13 @@ export const Header = () => {
               Desarrollo Sostenible
             </p>
             <div className={css.buttonHolder}>
-              <button>suscríbete</button>
-              <button className={css.conoceMas}>Conoce más</button>
+              <a
+                href={MailtoContent}
+                target="_blank"
+                className={css.buttonSuscribe}
+              >
+                suscribirse
+              </a>
             </div>
           </div>
           <div className={css.heroImage}></div>
