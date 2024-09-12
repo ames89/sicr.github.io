@@ -8,7 +8,9 @@ export const Content6 = () => {
       <div className={css.cubes} />
       <div className={css.container1_1}>
         <div className={css.container2}>
-          <h2 className={css.header1}>Mas que dinero, información</h2>
+          <h2 className={css.header1}>
+            Mas valiosa que el dinero, es la información
+          </h2>
           <p className={css.p}>
             ¡Únete a nuestro proyecto y contribuye al futuro sostenible de Costa
             Rica! Necesitamos tus datos sobre la generación de residuos para
