@@ -7,7 +7,7 @@ export const PowerBIWidget: React.FC = (): JSX.Element => {
         id="SICR_Datos"
         className={Css.frame}
         title="SICR_Datos"
-        src="https://app.powerbi.com/reportEmbed?reportId=b5a6119f-c0f8-4028-a519-4d5eb81d33eb&autoAuth=true&ctid=643c354c-8e33-43b1-9a6b-363c52959b4b"
+        src="https://app.powerbi.com/view?r=eyJrIjoiODcwYTJiMjEtZDFhMy00YTMwLWIzMDItZTE5NTBjMWU0NGEzIiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9"
         frameBorder={0}
         allowFullScreen
       />
