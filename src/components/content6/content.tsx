@@ -1,5 +1,5 @@
 import { joinClasses } from "../../utils/utils";
-import { MailtoContent } from "../utils/data";
+import { MailtoContent, POWERBI_URL } from "../utils/data";
 import css from "./content.module.scss";
 
 export const Content6 = () => {
@@ -31,11 +31,7 @@ export const Content6 = () => {
           <a className={css.link} href="#top">
             Principal
           </a>
-          <a
-            target="_blank"
-            className={css.link}
-            href="https://app.powerbi.com/view?r=eyJrIjoiODcwYTJiMjEtZDFhMy00YTMwLWIzMDItZTE5NTBjMWU0NGEzIiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=c833276eb095ee00c6bd"
-          >
+          <a target="_blank" className={css.link} href={POWERBI_URL}>
             SICR
           </a>
           <a target="_blank" className={css.link} href={MailtoContent}>
