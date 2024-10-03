@@ -26,7 +26,7 @@ export const Content6 = () => {
         </div>
       </div>
       <div className={css.footer}>
-        <span>©2024</span>
+        <span>©{new Date().getFullYear()}</span>
         <div className={css.rightFooter}>
           <a className={css.link} href="#top">
             Principal
@@ -43,6 +43,13 @@ export const Content6 = () => {
             href="https://www.instagram.com/sicr.ai"
           >
             Instagram
+          </a>
+          <a
+            target="_blank"
+            className={css.link}
+            href="https://www.threads.net/@sicr.ai"
+          >
+            Threads
           </a>
         </div>
       </div>
