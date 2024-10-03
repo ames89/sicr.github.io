@@ -1,0 +1,53 @@
+{
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true,
+  "http.proxySupport": "off",
+  "terminal.integrated.localEchoLatencyThreshold": -1,
+  "terminal.integrated.localEchoEnabled": "off",
+  "git.enableSmartCommit": true,
+  "editor.renderWhitespace": "all",
+  "git.autofetch": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "off",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "workbench.colorTheme": "Code OSS Dark",
+  "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editorAssociations": [
+      {
+          "*.md": "vscode.markdown.preview.editor"
+      }
+  ],
+  "workbench.startupEditor": "none",
+  "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, Courier New, monospace",
+  "editor.fontWeight": "normal",
+  "editor.fontSize": 13,
+  "editor.lineHeight": 1.5,
+  "editor.letterSpacing": 0,
+  "debug.console.fontSize": 12,
+  "window.commandCenter": false,
+  "workbench.preferredDarkColorTheme": "Monospace Dark",
+  "workbench.preferredLightColorTheme": "Monospace Light",
+  "workbench.iconTheme": "monospace",
+  "window.autoDetectColorScheme": true,
+  "workbench.layoutControl.enabled": false,
+  "inlineChat.mode": "preview",
+  "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "workbench.editor.enablePreview": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "eslint.codeAction.disableRuleComment": {
+      "commentStyle": "block"
+  },
+  "eslint.quiet": true,
+  "gitlens.currentLine.enabled": false
+}
