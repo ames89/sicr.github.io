@@ -1,4 +1,4 @@
-import {joinClasses} from "../../utils/utils";
+import { joinClasses } from "../../utils/utils";
 import css from "./content.module.scss";
 
 export const Content5 = () => {
@@ -11,12 +11,13 @@ export const Content5 = () => {
         <div className={css.divider} />
         <div className={joinClasses(css.content, css.textContent)}>
           <p className={css.p}>
-            Desarrollar e implementar soluciones innovadoras basadas en
-            inteligencia artificial para optimizar la gestión de residuos en
-            Costa Rica. A través de modelos predictivos avanzados, buscamos
-            reducir la generación de desechos, promover la economía circular y
-            contribuir significativamente a la sostenibilidad ambiental y al
-            bienestar de las comunidades.
+            Nuestra misión es desarrollar e implementar soluciones innovadoras
+            basadas en inteligencia artificial para optimizar la gestión de
+            residuos en Costa Rica. Mediante modelos predictivos avanzados, nos
+            enfocamos en reducir la generación de desechos, fomentar la economía
+            circular y contribuir de manera decisiva a la sostenibilidad
+            ambiental y al bienestar de las comunidades, impulsando un futuro
+            más limpio y eficiente.
           </p>
         </div>
       </div>
@@ -27,11 +28,12 @@ export const Content5 = () => {
         <div className={css.divider} />
         <div className={joinClasses(css.content, css.textContent)}>
           <p className={css.p}>
-            Convertirnos en líderes en la aplicación de tecnologías avanzadas
-            para la gestión sostenible de residuos. Aspiramos a crear un modelo
-            replicable que no solo beneficie a Costa Rica, sino que también
-            sirva de ejemplo a nivel mundial, impulsando un cambio positivo y
-            duradero hacia un planeta más limpio y habitable.
+            Nuestra visión es convertirnos en líderes globales en la aplicación
+            de tecnologías avanzadas para la gestión sostenible de residuos.
+            Aspiramos a desarrollar un modelo replicable que no solo transforme
+            Costa Rica, sino que también sirva como referencia mundial,
+            impulsando un cambio positivo y duradero hacia un planeta más limpio
+            y habitable para las futuras generaciones.
           </p>
         </div>
       </div>

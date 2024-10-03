@@ -25,6 +25,11 @@
   padding: 0 40px;
 }
 
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header1 {
   color: #0e3a0a;
   font-size: 36px;
