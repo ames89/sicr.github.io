@@ -10,6 +10,19 @@
   text-transform: uppercase;
 }
 
+.image {
+  max-height: 50px;
+}
+
+.imgLink {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+  color: initial;
+  align-items: center;
+}
+
 .container1_1 {
   background-color: #fdf8e8;
   display: flex;

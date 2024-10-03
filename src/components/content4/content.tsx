@@ -17,7 +17,12 @@ export const Content4 = () => {
           un impacto positivo en nuestra comunidad y el medio ambiente. Únete a
           nosotros y sé parte del cambio hacia un futuro más verde y próspero.
         </p>
-        <a target="_blank" href={MailtoContent} className={css.button}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={MailtoContent}
+          className={css.button}
+        >
           UNIRSE
         </a>
       </div>

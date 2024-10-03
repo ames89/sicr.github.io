@@ -1,6 +1,7 @@
-import { joinClasses } from "../../utils/utils";
 import { MailtoContent, POWERBI_URL } from "../utils/data";
 import css from "./content.module.scss";
+import resumen from "./resumen-ejecutivo.png";
+import analisis from "./analysis-resultados.png";
 
 export const Content6 = () => {
   return (
@@ -19,16 +20,28 @@ export const Content6 = () => {
             <a
               href="/files/Resumen_Ejecutivo_compressed.pdf"
               target="_blank"
-              className={joinClasses("button", css.button)}
+              rel="noreferrer"
+              className={css.imgLink}
             >
-              Resumen Ejecutivo
+              <img
+                alt="Resumen Ejecutivo"
+                src={resumen}
+                className={css.image}
+              />
+              <span>Resumen Ejecutivo</span>
             </a>
             <a
               href="/files/Analisis_de_Resultados_SICR_compressed.pdf"
               target="_blank"
-              className={joinClasses("button", css.button)}
+              rel="noreferrer"
+              className={css.imgLink}
             >
-              Análisis de los Resultados
+              <img
+                alt="Análisis de Resultados"
+                src={analisis}
+                className={css.image}
+              />
+              <span>Análisis de Resultados</span>
             </a>
           </div>
         </div>
@@ -39,14 +52,25 @@ export const Content6 = () => {
           <a className={css.link} href="#top">
             Principal
           </a>
-          <a target="_blank" className={css.link} href={POWERBI_URL}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className={css.link}
+            href={POWERBI_URL}
+          >
             SICR
           </a>
-          <a target="_blank" className={css.link} href={MailtoContent}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className={css.link}
+            href={MailtoContent}
+          >
             Contacto
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             className={css.link}
             href="https://www.instagram.com/sicr.ai"
           >
@@ -54,6 +78,7 @@ export const Content6 = () => {
           </a>
           <a
             target="_blank"
+            rel="noreferrer"
             className={css.link}
             href="https://www.threads.net/@sicr.ai"
           >

@@ -10,7 +10,12 @@ export const Header = () => {
             <a href="#acerca" className={css.link}>
               Acerca
             </a>
-            <a target="_blank" href={MailtoContent} className={css.link}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={MailtoContent}
+              className={css.link}
+            >
               Contacto
             </a>
             <a href="#SICR_Datos" className={css.link}>
@@ -40,6 +45,7 @@ export const Header = () => {
               <a
                 href={MailtoContent}
                 target="_blank"
+                rel="noreferrer"
                 className={css.buttonSuscribe}
               >
                 suscribirse
