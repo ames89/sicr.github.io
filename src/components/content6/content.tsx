@@ -72,6 +72,14 @@ export const Content6 = () => {
             target="_blank"
             rel="noreferrer"
             className={css.link}
+            href="https://www.facebook.com/share/r/2KWE9BtbeiqMWfgf"
+          >
+            Facebook
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className={css.link}
             href="https://www.instagram.com/sicr.ai"
           >
             Instagram
