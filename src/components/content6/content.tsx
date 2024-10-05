@@ -2,6 +2,9 @@ import { MailtoContent, POWERBI_URL } from "../utils/data";
 import css from "./content.module.scss";
 import resumen from "./resumen-ejecutivo.png";
 import analisis from "./analysis-resultados.png";
+import { ReactComponent as Facebook } from "./svg/facebook.svg";
+import { ReactComponent as Instagram } from "./svg/instagram.svg";
+import { ReactComponent as Threads } from "./svg/threads.svg";
 
 export const Content6 = () => {
   return (
@@ -73,24 +76,27 @@ export const Content6 = () => {
             rel="noreferrer"
             className={css.link}
             href="https://www.facebook.com/share/r/2KWE9BtbeiqMWfgf"
+            title="facebook"
           >
-            Facebook
+            <Facebook className={css.socialSvg} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             className={css.link}
             href="https://www.instagram.com/sicr.ai"
+            title="instagram"
           >
-            Instagram
+            <Instagram className={css.socialSvg} />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             className={css.link}
             href="https://www.threads.net/@sicr.ai"
+            title="threads"
           >
-            Threads
+            <Threads className={css.socialSvg} />
           </a>
         </div>
       </div>

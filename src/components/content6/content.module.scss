@@ -1,5 +1,10 @@
 @import "/src/scss/media-queries.scss";
 
+.socialSvg {
+  width: 40px;
+  height: 40px;
+}
+
 .button {
   align-self: center;
   background-color: #0e3a0a;
@@ -83,10 +88,13 @@
 }
 
 .rightFooter {
+  align-items: initial;
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   @include viewport-desktop {
+    align-items: center;
     flex-direction: row;
   }
 }
