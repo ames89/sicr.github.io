@@ -15,12 +15,13 @@
 }
 
 .imgLink {
+  align-items: center;
+  color: initial;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  text-align: center;
   text-decoration: none;
-  color: initial;
-  align-items: center;
 }
 
 .container1_1 {
