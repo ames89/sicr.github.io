@@ -85,16 +85,20 @@
   display: flex;
   justify-content: space-evenly;
   padding: 60px 0;
+  @include viewport-mobile {
+    flex-direction: column-reverse;
+  }
 }
 
 .rightFooter {
-  align-items: initial;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 
   @include viewport-desktop {
     align-items: center;
+    display: flex;
     flex-direction: row;
   }
 }
