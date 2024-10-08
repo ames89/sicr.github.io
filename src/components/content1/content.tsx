@@ -6,7 +6,7 @@ export const Content1 = () => {
   return (
     <div className={joinClasses(css.row, css.container)}>
       <div className={joinClasses(css.container1, css.column)}>
-        <h2 className={css.title}>Rápido, Acertado, Óptimo</h2>
+        <h2 className={css.title}>Rápido, Acertado y Óptimo</h2>
         <p className={css.p}>
           Nos comprometemos a impulsar el progreso de Costa Rica utilizando
           datos e inteligencia artificial para fomentar una economía circular

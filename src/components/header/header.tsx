@@ -48,7 +48,7 @@ export const Header = () => {
                 rel="noreferrer"
                 className={css.buttonSuscribe}
               >
-                suscribirse
+                Suscribirse
               </a>
             </div>
           </div>
