@@ -9,7 +9,6 @@
   idx.extensions = [
     "eamodio.gitlens"
     "mhutchie.git-graph"
-    "usernamehw.errorlens"
     "dbaeumer.vscode-eslint"
     "esbenp.prettier-vscode"
   ];
@@ -18,18 +17,18 @@
     install-yarn = "npm i -g yarn";
   };
 
-  idx.previews = {
-    previews = {
-      web = {
-        command = [
-          "yarn"
-          "start"
-        ];
-        env = {
-          PORT = "$PORT";
-        };
-        manager = "web";
-      };
-    };
-  };
+  # idx.previews = {
+  #   previews = {
+  #     web = {
+  #       command = [
+  #         "yarn"
+  #         "start"
+  #       ];
+  #       env = {
+  #         PORT = "$PORT";
+  #       };
+  #       manager = "web";
+  #     };
+  #   };
+  # };
 }

@@ -8,10 +8,10 @@
   "files.autoSave": "off",
   "editor.multiCursorModifier": "ctrlCmd",
   "[typescriptreact]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[scss]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.startupEditor": "none",
   "editor.fontFamily": "JetBrains Mono, Menlo, Monaco, Courier New, monospace",
@@ -25,18 +25,27 @@
   "workbench.layoutControl.enabled": false,
   "inlineChat.mode": "preview",
   "[typescript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.wordWrap": "on",
   "workbench.editor.enablePreview": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "eslint.codeAction.disableRuleComment": {
-      "commentStyle": "block"
+    "commentStyle": "block"
   },
   "eslint.quiet": true,
-"gitlens.currentLine.enabled": false,
-"workbench.colorTheme": "Default Light Modern"
+  "gitlens.currentLine.enabled": false,
+  "workbench.colorTheme": "Default Light Modern",
+  "debug.confirmOnExit": "always",
+  "workbench.preferredLightColorTheme": "Code OSS Light",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "git.allowForcePush": true,
+  "terminal.integrated.shellIntegration.history": 100000,
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true
 }

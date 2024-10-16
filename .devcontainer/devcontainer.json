@@ -1,32 +1,30 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
-    "hostRequirements": {
-        "cpus": 1
-    },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "yarn",
-    "postCreateCommand": "",
-    "postAttachCommand": {
-        "server": "yarn start"
-    },
-    "portsAttributes": {
-        "3000": {
-            "label": "Application",
-            "onAutoForward": "openPreview"
-        }
-    },
-    "forwardPorts": [
-        3000
-    ],
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "esbenp.prettier-vscode",
-                "dbaeumer.vscode-eslint",
-                "eamodio.gitlens",
-                "mhutchie.git-graph",
-                "YoavBls.pretty-ts-errors"
-            ]
-        }
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:22",
+  "hostRequirements": {
+    "cpus": 1
+  },
+  "waitFor": "onCreateCommand",
+  "updateContentCommand": "yarn",
+  "postCreateCommand": "",
+  // "postAttachCommand": {
+  //   "server": "yarn start"
+  // },
+  // "portsAttributes": {
+  //     "3000": {
+  //         "label": "Application",
+  //         "onAutoForward": "openPreview"
+  //     }
+  // },
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "YoavBls.pretty-ts-errors"
+      ]
     }
+  }
 }
