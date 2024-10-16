@@ -11,10 +11,11 @@ function Counters() {
         <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={70}
-              suffix="+"
-              title="Coded Elements"
-              description="From buttons, to inputs, navbars, alerts or cards, you are covered"
+              count={3.4}
+              decimals={1}
+              suffix="MT"
+              title="Desechos Sólidos"
+              description="Para 2050, se estima que de generarán 3.4 millones de toneladas de residuos urbanos al año."
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
