@@ -13,7 +13,7 @@ function Counters() {
             <DefaultCounterCard
               count={3.4}
               decimals={1}
-              suffix="MT"
+              suffix="M T"
               title="Desechos Sólidos"
               description="Para 2050, se estima que de generarán 3.4 millones de toneladas de residuos urbanos al año."
             />
@@ -21,18 +21,20 @@ function Counters() {
           <Grid item xs={12} md={4} display="flex">
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
             <DefaultCounterCard
-              count={15}
-              suffix="+"
-              title="Design Blocks"
-              description="Mix the sections, change the colors and unleash your creativity"
+              count={1.4}
+              decimals={1}
+              suffix="M T"
+              title="Desechos en Costa Rica"
+              description="Costa Rica produce 1.4 millones de toneladas de residuos sólidos anuales."
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={4}
-              title="Pages"
-              description="Save 3-4 weeks of work when you use our pre-made pages for your website"
+              count={30}
+              suffix="%"
+              title="Reciclaje en Costa Rica"
+              description="Solo el 30% de estos residuos sólidos se recicla."
             />
           </Grid>
         </Grid>
