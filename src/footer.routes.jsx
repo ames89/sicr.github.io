@@ -6,7 +6,7 @@ import { ThreadsIcon } from "assets/icons/threads";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/logo-ct-dark.png";
+import logoCT from "assets/images/SICR_Logo_2_alpha-min.png";
 
 const date = new Date().getFullYear();
 
@@ -18,22 +18,22 @@ export default {
   },
   socials: [
     {
-      icon: <FacebookIcon />,
+      icon: <FacebookIcon sx={{ width: "20px", height: "20px" }} />,
       link: "https://www.facebook.com/profile.php?id=61566447437342",
     },
     {
-      icon: <i className="fab fa-instagram" />,
+      icon: <i className="fab fa-instagram" style={{ width: "20px", height: "20px" }} />,
       link: "https://www.instagram.com/sicr.ai",
     },
     {
-      icon: <ThreadsIcon />,
+      icon: <ThreadsIcon sx={{ width: "20px", height: "20px" }} />,
       link: "https://www.threads.net/@sicr.ai",
     },
   ],
   menus: [
     {
       name: "Equipo",
-      items: [{ name: "Acerca de nosotros", href: "/about-us" }],
+      items: [{ name: "Acerca de Nosotros", href: "/about-us" }],
     },
     {
       name: "Recursos",
@@ -53,7 +53,7 @@ export default {
       items: [{ name: "Contáctanos", href: "/contact-us" }],
     },
     {
-      name: "Herramientas",
+      name: "Herramienta",
       items: [
         {
           name: "SICR",

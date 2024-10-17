@@ -5,7 +5,12 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-export const InteractivePowerBIContent = ({ title = "", body = "", urlGraph = "" }) => {
+export const InteractivePowerBIContent = ({
+  title = "",
+  body = "",
+  urlGraph = "",
+  invert = false,
+}) => {
   return (
     <View>
       <MKBox component="section" py={{ xs: 3, md: 2 }}>
@@ -14,7 +19,10 @@ export const InteractivePowerBIContent = ({ title = "", body = "", urlGraph = ""
             container
             alignItems="center"
             justifyContent="space-between"
-            sx={{ gap: { xs: 3, lg: 1 } }}
+            sx={{
+              gap: { xs: 3, lg: 1 },
+              flexDirection: { xs: "row", md: invert ? "row-reverse" : "row" },
+            }}
           >
             <Grid item xs={12} lg={5}>
               <MKTypography variant="h3" my={1}>
@@ -22,7 +30,11 @@ export const InteractivePowerBIContent = ({ title = "", body = "", urlGraph = ""
               </MKTypography>
               {body ? (
                 <>
-                  <MKTypography color="text" mb={2}>
+                  <MKTypography
+                    color="text"
+                    mb={2}
+                    sx={{ fontSize: { xs: "1rem", md: "1.25rem" } }}
+                  >
                     {body}
                   </MKTypography>
                   <MKTypography
