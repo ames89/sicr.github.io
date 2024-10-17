@@ -50,7 +50,7 @@ function AboutUs() {
               display="flex"
               justifyContent="center"
               alignItems="center"
-              sx={{ minHeight: "100px" }}
+              sx={{ minHeight: "75px" }}
             />
             <MKTypography
               variant="h1"
@@ -111,6 +111,12 @@ function AboutUs() {
                 <ThreadsIcon />
               </MKTypography>
             </MKBox>
+            <MKBox
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ minHeight: "75px" }}
+            />
           </Grid>
         </Container>
       </MKBox>

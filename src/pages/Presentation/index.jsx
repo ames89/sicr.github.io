@@ -51,7 +51,7 @@ function Presentation() {
     <>
       <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="570px"
+        minHeight="75vh"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,
@@ -71,6 +71,12 @@ function Presentation() {
             mx="auto"
             sx={{ backgroundColor: "#13716787", borderRadius: 3 }}
           >
+            <MKBox
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ minHeight: "75px" }}
+            />
             <MKTypography
               variant="h1"
               color="white"
@@ -98,6 +104,12 @@ function Presentation() {
               sólidos, va desde un impacto paisajístico, hasta graves problemas relacionados con la
               contaminación del agua, aire y de los suelos.
             </MKTypography>
+            <MKBox
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ minHeight: "75px" }}
+            />
           </Grid>
         </Container>
       </MKBox>
