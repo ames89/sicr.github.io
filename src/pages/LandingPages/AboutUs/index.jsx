@@ -51,7 +51,7 @@ function AboutUs() {
               justifyContent="center"
               alignItems="center"
               sx={{ minHeight: "100px" }}
-            ></MKBox>
+            />
             <MKTypography
               variant="h1"
               color="white"

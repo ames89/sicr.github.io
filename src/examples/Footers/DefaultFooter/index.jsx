@@ -40,13 +40,7 @@ function DefaultFooter({ content }) {
           </Grid>
           {menus.map(({ name: title, items }) => (
             <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
-              <MKTypography
-                display="block"
-                variant="button"
-                fontWeight="bold"
-                textTransform="capitalize"
-                mb={1}
-              >
+              <MKTypography display="block" variant="button" fontWeight="bold" mb={1}>
                 {title}
               </MKTypography>
               <MKBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
@@ -60,7 +54,6 @@ function DefaultFooter({ content }) {
                         rel="noreferrer"
                         variant="button"
                         fontWeight="regular"
-                        textTransform="capitalize"
                       >
                         {name}
                       </MKTypography>
@@ -70,7 +63,6 @@ function DefaultFooter({ content }) {
                         to={route}
                         variant="button"
                         fontWeight="regular"
-                        textTransform="capitalize"
                       >
                         {name}
                       </MKTypography>

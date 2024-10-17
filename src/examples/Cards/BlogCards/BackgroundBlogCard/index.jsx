@@ -77,7 +77,6 @@ function BackgroundBlogCard({ image, title, description, action }) {
               variant="body2"
               fontWeight="regular"
               color="white"
-              textTransform="capitalize"
               sx={cardActionStyles}
             >
               {action.label}
@@ -92,7 +91,6 @@ function BackgroundBlogCard({ image, title, description, action }) {
               variant="body2"
               fontWeight="regular"
               color="white"
-              textTransform="capitalize"
               sx={cardActionStyles}
             >
               {action.label}

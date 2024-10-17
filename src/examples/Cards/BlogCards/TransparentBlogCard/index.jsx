@@ -114,7 +114,6 @@ function TransparentBlogCard({ image, title, description, action }) {
             variant="body2"
             fontWeight="regular"
             color={action.color}
-            textTransform="capitalize"
             sx={cardActionStyles}
           >
             {action.label}
@@ -129,7 +128,6 @@ function TransparentBlogCard({ image, title, description, action }) {
             variant="body2"
             fontWeight="regular"
             color={action.color}
-            textTransform="capitalize"
             sx={cardActionStyles}
           >
             {action.label}

@@ -34,7 +34,6 @@ function DefaultNavbarMobile({ routes, open }) {
                       display="block"
                       variant="button"
                       fontWeight="bold"
-                      textTransform="capitalize"
                       py={1}
                       px={0.5}
                     >
@@ -52,7 +51,6 @@ function DefaultNavbarMobile({ routes, open }) {
                         display="block"
                         variant="button"
                         color="text"
-                        textTransform="capitalize"
                         fontWeight="regular"
                         py={0.625}
                         px={2}
@@ -94,12 +92,7 @@ function DefaultNavbarMobile({ routes, open }) {
                       },
                     })}
                   >
-                    <MKTypography
-                      display="block"
-                      variant="button"
-                      fontWeight="bold"
-                      textTransform="capitalize"
-                    >
+                    <MKTypography display="block" variant="button" fontWeight="bold">
                       {item.name}
                     </MKTypography>
                     <MKTypography
