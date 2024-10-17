@@ -44,7 +44,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation-v2_compressed.webp";
+import bgImage from "assets/images/bg-presentation-v2_compressed.png";
 
 function Presentation() {
   return (
