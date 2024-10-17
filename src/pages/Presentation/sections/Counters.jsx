@@ -15,7 +15,7 @@ function Counters() {
               decimals={1}
               suffix="M T"
               title="Desechos Sólidos"
-              description="Para 2050, se estima que de generarán 3.4 millones de toneladas de residuos urbanos al año."
+              description="Para 2050, se estima que se generarán 3.4 millones de toneladas de residuos urbanos al año."
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
