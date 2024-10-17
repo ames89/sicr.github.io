@@ -20,10 +20,9 @@ function ContactUs() {
       <MKBox position="fixed" top="0.5rem" width="100%">
         <DefaultNavbar routes={routes} />
       </MKBox>
-      <Grid container spacing={3} alignItems="center">
-        <Grid item xs={12} lg={6}>
+      <Grid container alignItems="center">
+        <Grid item xs={2} lg={6} display={{ xs: "none", lg: "block" }}>
           <MKBox
-            display={{ xs: "none", lg: "flex" }}
             width="calc(100% - 2rem)"
             height="calc(100vh - 2rem)"
             borderRadius="lg"
@@ -32,16 +31,7 @@ function ContactUs() {
             sx={{ backgroundImage: `url(${bgImage})` }}
           />
         </Grid>
-        <Grid
-          item
-          xs={12}
-          sm={10}
-          md={7}
-          lg={6}
-          xl={4}
-          ml={{ xs: "auto", lg: 6 }}
-          mr={{ xs: "auto", lg: 6 }}
-        >
+        <Grid item xs={12} lg={6}>
           <MKBox
             bgColor="white"
             borderRadius="xl"
