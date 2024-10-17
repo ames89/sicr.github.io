@@ -51,7 +51,7 @@ function Presentation() {
     <>
       <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="75vh"
+        minHeight="570px"
         width="100%"
         sx={{
           backgroundImage: `url(${bgImage})`,

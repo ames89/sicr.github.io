@@ -21,7 +21,7 @@ function AboutUs() {
     <>
       <DefaultNavbar routes={routes} sticky />
       <MKBox
-        minHeight="75vh"
+        minHeight="880px"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>
