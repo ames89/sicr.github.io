@@ -1,35 +1,10 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import { useState } from "react";
-
-// react-router components
 import { Link } from "react-router-dom";
-
-// prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
-
-// @mui material components
 import Collapse from "@mui/material/Collapse";
 import MuiLink from "@mui/material/Link";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 React example components
 import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 function DefaultNavbarMobile({ routes, open }) {
@@ -44,7 +19,7 @@ function DefaultNavbarMobile({ routes, open }) {
         name={name}
         icon={icon}
         collapseStatus={name === collapse}
-        onClick={() => handleSetCollapse(name)}
+        onClick={() => (href || route ? setCollapse(false) : handleSetCollapse(name))}
         href={href}
         route={route}
         collapse={Boolean(navCollapse)}
@@ -85,7 +60,6 @@ function DefaultNavbarMobile({ routes, open }) {
                           borderRadius: borderRadius.md,
                           cursor: "pointer",
                           transition: "all 300ms linear",
-
                           "&:hover": {
                             backgroundColor: grey[200],
                             color: dark.main,
@@ -111,11 +85,9 @@ function DefaultNavbarMobile({ routes, open }) {
                       transition: "all 300ms linear",
                       py: 1,
                       px: 1.625,
-
                       "&:hover": {
                         backgroundColor: grey[200],
                         color: dark.main,
-
                         "& *": {
                           color: dark.main,
                         },

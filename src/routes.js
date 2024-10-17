@@ -5,27 +5,26 @@ import Presentation from "layouts/pages/presentation";
 
 const routes = [
   {
-    name: "Menú",
-    icon: <Icon>dashboard</Icon>,
+    name: "Principal",
+    route: "/",
+    component: <Presentation />,
+    icon: <Icon>domain</Icon>,
     columns: 0,
     rowsPerColumn: 1,
-    collapse: [
-      {
-        name: "Página Principal",
-        route: "/",
-        component: <Presentation />,
-      },
-      {
-        name: "Acerca de Nosotros",
-        route: "/about-us",
-        component: <AboutUs />,
-      },
-      {
-        name: "Contáctanos",
-        route: "/contact-us",
-        component: <ContactUs />,
-      },
-    ],
+  },
+  {
+    name: "Acerca de Nosotros",
+    route: "/about-us",
+    component: <AboutUs />,
+    icon: <Icon>people</Icon>,
+  },
+  {
+    name: "Contáctanos",
+    route: "/contact-us",
+    component: <ContactUs />,
+    icon: <Icon>mailOutline</Icon>,
+    columns: 0,
+    rowsPerColumn: 1,
   },
 ];
 
