@@ -1,7 +1,5 @@
 import Grid from "@mui/material/Grid";
-import { useState } from "react";
 import MKBox from "components/MKBox";
-import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
@@ -9,12 +7,11 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
+import typography from "assets/theme/base/typography";
+
+const { fontWeightBold } = typography;
 
 function ContactUs() {
-  const [namePerson, setNamePerson] = useState("");
-  const [emailPerson, setEmailPerson] = useState("");
-  const [body, setBody] = useState("");
-
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
@@ -53,73 +50,31 @@ function ContactUs() {
               mt={-3}
             >
               <MKTypography variant="h3" color="white">
-                Contáctanos
+                Conéctate
               </MKTypography>
             </MKBox>
             <MKBox p={3}>
+              <MKTypography variant="body1" fontWeight={fontWeightBold} color="text" mb={3}>
+                Sé Parte de la Solución
+              </MKTypography>
               <MKTypography variant="body2" color="text" mb={3}>
-                Para obtener más información, envíenos un correo a{" "}
-                <MKTypography
-                  component="a"
-                  href="mailto:sicr@sicr-costarica.org"
-                  target="_blank"
-                  rel="noreferrer"
-                  color="dark"
-                  variant="body2"
-                >
-                  sicr@sicr-costarica.org
-                </MKTypography>{" "}
-                o comuníquese a través de nuestro formulario de contacto.
+                Te invitamos a formar parte de nuestro innovador proyecto de optimización predictiva
+                de residuos. Con tu participación, podemos avanzar hacia una Costa Rica más
+                sostenible, aprovechar la inteligencia artificial para mejorar la gestión de
+                residuos y fomentar la economía circular. Juntos, transformaremos desafíos
+                ambientales en oportunidades, creando un impacto positivo en nuestra comunidad y el
+                medio ambiente. Únete a nosotros y sé parte del cambio hacia un futuro más verde y
+                próspero.
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off">
-                <Grid container spacing={3}>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      variant="standard"
-                      label="Nombre Completo"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                      value={namePerson}
-                      onChange={(val) => setNamePerson(val.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={6}>
-                    <MKInput
-                      type="email"
-                      variant="standard"
-                      label="Correo Electrónico"
-                      InputLabelProps={{ shrink: true }}
-                      fullWidth
-                      value={emailPerson}
-                      onChange={(val) => setEmailPerson(val.target.value)}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <MKInput
-                      variant="standard"
-                      label="¿Cómo podemos ayudarte?"
-                      placeholder="Escribe tu consulta en este recuadro"
-                      InputLabelProps={{ shrink: true }}
-                      multiline
-                      fullWidth
-                      rows={6}
-                      value={body}
-                      onChange={(val) => setBody(val.target.value)}
-                    />
-                  </Grid>
-                </Grid>
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
                   <MKButton
                     component="a"
                     variant="gradient"
                     color="info"
-                    href={`mailto:sicr@sicr-costarica.org?subject=${encodeURI(
-                      `Hola, mi nombre es ${namePerson} y me gustaría conocer más sobre su trabajo`
-                    )}&body=${encodeURI(body)}`}
-                    target="_blank"
-                    rel="noreferrer"
+                    href="mailto:sicr@sicr-costarica.org"
                   >
-                    Enviar
+                    Contáctanos
                   </MKButton>
                 </Grid>
               </MKBox>
