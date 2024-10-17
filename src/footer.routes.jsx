@@ -12,7 +12,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "SICR",
+    name: "",
     image: logoCT,
     route: "/",
   },

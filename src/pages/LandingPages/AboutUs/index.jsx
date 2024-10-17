@@ -19,7 +19,7 @@ import { ThreadsIcon } from "assets/icons/threads";
 function AboutUs() {
   return (
     <>
-      <DefaultNavbar routes={routes} transparent light />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -46,6 +46,12 @@ function AboutUs() {
             flexDirection="column"
             sx={{ mx: "auto", textAlign: "center" }}
           >
+            <MKBox
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              sx={{ minHeight: "100px" }}
+            ></MKBox>
             <MKTypography
               variant="h1"
               color="white"
