@@ -6,7 +6,7 @@ import { ThreadsIcon } from "assets/icons/threads";
 import MKTypography from "components/MKTypography";
 
 // Images
-import logoCT from "assets/images/SICR_Logo_2_alpha-min.png";
+import logoCT from "./assets/images/SICR_Logo_2_alpha-min.png";
 
 const date = new Date().getFullYear();
 

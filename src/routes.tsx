@@ -1,7 +1,8 @@
+import React from "react";
 import Icon from "@mui/material/Icon";
-import AboutUs from "layouts/pages/landing-pages/about-us";
-import ContactUs from "layouts/pages/landing-pages/contact-us";
-import Presentation from "layouts/pages/presentation";
+import AboutUs from "./layouts/pages/landing-pages/about-us";
+import ContactUs from "./layouts/pages/landing-pages/contact-us";
+import Presentation from "./layouts/pages/presentation";
 
 const routes = [
   {

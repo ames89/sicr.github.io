@@ -1,0 +1,25 @@
+{
+  "include": ["./src/**/*", "./src/**/*.json"],
+  "exclude": [],
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true,
+    "pretty": true,
+    // "allowJs": true,
+    "checkJs": false,
+    "baseUrl": "./src",
+    "lib": ["dom", "ES2023"],
+    "target": "ES2019",
+    "moduleResolution": "node",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "preserveConstEnums": true,
+    "isolatedModules": false
+  }
+}

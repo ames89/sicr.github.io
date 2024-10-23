@@ -47,5 +47,6 @@
   "git.allowForcePush": true,
   "terminal.integrated.shellIntegration.history": 100000,
   "IDX.aI.enableInlineCompletion": true,
-  "IDX.aI.enableCodebaseIndexing": true
+  "IDX.aI.enableCodebaseIndexing": true,
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

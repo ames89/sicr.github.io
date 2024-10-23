@@ -1,3 +1,4 @@
+import React from "react";
 import View from "layouts/sections/components/View";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -5,7 +6,14 @@ import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-export const InteractivePowerBIContent = ({
+interface InteractivePowerBIContentProps {
+  title?: string;
+  body?: string;
+  urlGraph?: string;
+  invert?: boolean;
+}
+
+export const InteractivePowerBIContent: React.FC<InteractivePowerBIContentProps> = ({
   title = "",
   body = "",
   urlGraph = "",
@@ -79,7 +87,6 @@ export const InteractivePowerBIContent = ({
               <iframe
                 title="SICR_Historico"
                 src={urlGraph}
-                alt="SICR_Historico"
                 style={{
                   height: "100%",
                   left: "0",
