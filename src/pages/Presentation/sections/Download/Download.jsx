@@ -4,8 +4,12 @@ import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import bgImage from "assets/images/shapes/waves-white.svg";
+import lang from "./lang.json";
 
 function Download() {
+  const { language: activeLang } = useLanguage();
+  const { header1 } = lang[activeLang];
+
   return (
     <MKBox component="section" sx={{ pt: { xs: 0, sm: 2 } }}>
       <MKBox
@@ -29,12 +33,10 @@ function Download() {
         <Container sx={{ position: "relative", zIndex: 2, pt: 12, pb: 4 }}>
           <Grid container item xs={12} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
-              Recursos
+              {header1}
             </MKTypography>
             <MKTypography variant="body2" color="white" mb={6}>
-              Descarga ahora el Resumen Ejecutivo o el Análisis de Resultados y obtén una visión
-              clara de nuestras soluciones innovadoras en la gestión de residuos. Conoce los datos
-              clave y las estrategias que impulsan un futuro más sostenible.
+              {body1}
             </MKTypography>
             <MKBox
               textAlign="center"
