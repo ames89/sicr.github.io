@@ -1,52 +1,41 @@
 import React from "react";
 
-export interface ILanguageObject {
-  title: string;
-  description: string;
-  value: string;
-  words?: {
-    pages?: any;
-    components?: any;
-  };
-}
+type tLanguage = "en" | "es";
 
 export interface ILanguageOptions {
-  defaultValue: ILanguageObject;
   persisted?: boolean;
-  languages?: ILanguageObject[];
+  defaultLanguage?: tLanguage;
   children?: React.ReactNode;
 }
 
 export interface ILanguageContext {
-  language: ILanguageObject;
-  setLanguage: React.Dispatch<React.SetStateAction<ILanguageObject>>;
+  language: tLanguage;
+  setLanguage: React.Dispatch<React.SetStateAction<tLanguage>>;
 }
 
 export const LanguageContext = React.createContext<ILanguageContext>({} as ILanguageContext);
 
 export const LanguageProvider: React.FC<ILanguageOptions> = ({
-  defaultValue,
   persisted,
-  languages,
+  defaultLanguage,
   children,
 }) => {
-  const [language, setLanguage] = React.useState<ILanguageObject>(() => {
+  const [language, setLanguage] = React.useState<tLanguage>(() => {
     if (persisted) {
       const storageValue = localStorage.getItem("application_language");
 
       if (storageValue) {
-        return languages!.filter((lang) => lang.value === JSON.parse(storageValue))[0];
+        return JSON.parse(storageValue);
       } else {
-        return defaultValue;
+        return defaultLanguage;
       }
-    } else {
-      return defaultValue;
     }
+    return defaultLanguage;
   });
 
   React.useEffect(() => {
     if (persisted) {
-      localStorage.setItem("application_language", JSON.stringify(language.value));
+      localStorage.setItem("application_language", JSON.stringify(language));
     }
   }, [language, persisted]);
 

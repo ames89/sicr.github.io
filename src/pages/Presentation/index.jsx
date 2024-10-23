@@ -11,8 +11,12 @@ import Download from "pages/Presentation/sections/Download";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-presentation-v2_compressed.png";
+import lang from "./lang.json";
+import { useLanguage } from "hooks/useLanguage";
 
 function Presentation() {
+  const { language: activeLang } = useLanguage();
+
   return (
     <>
       <DefaultNavbar routes={routes} sticky />
@@ -56,7 +60,7 @@ function Presentation() {
                 },
               })}
             >
-              Sistema Inteligente de Clasificación de Residuos (SICR){" "}
+              {lang[activeLang].header}{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -66,9 +70,7 @@ function Presentation() {
               mt={1}
               mb={3}
             >
-              El impacto ambiental derivado de la problemática del incremento de los desechos
-              sólidos, va desde un impacto paisajístico, hasta graves problemas relacionados con la
-              contaminación del agua, aire y de los suelos.
+              {lang[activeLang].text1}
             </MKTypography>
             <MKBox
               display="flex"

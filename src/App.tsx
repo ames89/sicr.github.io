@@ -5,6 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 import routes from "routes";
+import { LanguageProvider } from "hooks/useLanguage";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -31,13 +32,15 @@ export default function App() {
     });
 
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="/" element={<Presentation />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
-    </ThemeProvider>
+    <LanguageProvider defaultLanguage="es" persisted>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Routes>
+          {getRoutes(routes)}
+          <Route path="/" element={<Presentation />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </ThemeProvider>
+    </LanguageProvider>
   );
 }
