@@ -5,10 +5,11 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import bgImage from "assets/images/shapes/waves-white.svg";
 import lang from "./lang.json";
+import { useLanguage } from "hooks/useLanguage";
 
-function Download() {
+export const Download = () => {
   const { language: activeLang } = useLanguage();
-  const { header1 } = lang[activeLang];
+  const content = lang[activeLang];
 
   return (
     <MKBox component="section" sx={{ pt: { xs: 0, sm: 2 } }}>
@@ -33,10 +34,10 @@ function Download() {
         <Container sx={{ position: "relative", zIndex: 2, pt: 12, pb: 4 }}>
           <Grid container item xs={12} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
-              {header1}
+              {content.header1}
             </MKTypography>
             <MKTypography variant="body2" color="white" mb={6}>
-              {body1}
+              {content.body1}
             </MKTypography>
             <MKBox
               textAlign="center"
@@ -55,7 +56,7 @@ function Download() {
                 href="https://raw.githubusercontent.com/ames89/sicr.github.io/refs/heads/main/public/files/Resumen_Ejecutivo_compressed.pdf"
                 sx={{ mr: { md: 2 }, marginBottom: { xs: 2, md: 0 } }}
               >
-                Resumen Ejecutivo
+                {content.header2}
               </MKButton>
               <MKButton
                 variant="gradient"
@@ -64,7 +65,7 @@ function Download() {
                 component="a"
                 href="https://raw.githubusercontent.com/ames89/sicr.github.io/refs/heads/main/public/files/Analisis_de_Resultados_SICR_compressed.pdf"
               >
-                Análisis de Resultados
+                {content.header3}
               </MKButton>
             </MKBox>
           </Grid>
@@ -72,6 +73,4 @@ function Download() {
       </MKBox>
     </MKBox>
   );
-}
-
-export default Download;
+};

@@ -1,10 +1,14 @@
 {
     "es": {
         "header1": "Recursos",
-        "body1": "Descarga ahora el Resumen Ejecutivo o el Análisis de Resultados y obtén una visión clara de nuestras soluciones innovadoras en la gestión de residuos. Conoce los datos clave y las estrategias que impulsan un futuro más sostenible."
+        "body1": "Descarga ahora el Resumen Ejecutivo o el Análisis de Resultados y obtén una visión clara de nuestras soluciones innovadoras en la gestión de residuos. Conoce los datos clave y las estrategias que impulsan un futuro más sostenible.",
+        "header2": "Resumen Ejecutivo",
+        "header3": "Análisis de Resultados"
     },
     "en": {
         "header1": "Resources",
-        "body1": "Download the Executive Summary or the Results Analysis now and gain a clear insight into our innovative waste management solutions. Discover key data and the strategies driving a more sustainable future."
+        "body1": "Download the Executive Summary or the Results Analysis now and gain a clear insight into our innovative waste management solutions. Discover key data and the strategies driving a more sustainable future.",
+        "header2": "Executive Summary",
+        "header3": "Results Analysis"
     }
 }

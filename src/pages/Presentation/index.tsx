@@ -7,14 +7,18 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import Download from "pages/Presentation/sections/Download";
+import { Download } from "pages/Presentation/sections/Download";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-presentation-v2_compressed.png";
 import lang from "./lang.json";
 import { useLanguage } from "hooks/useLanguage";
 
-function Presentation() {
+declare module "@mui/system" {
+  interface Theme extends Record<string, any> {}
+}
+
+const Presentation = () => {
   const { language: activeLang } = useLanguage();
 
   return (
@@ -87,7 +91,12 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundColor: ({
+            palette: {
+              common: { white },
+            },
+            functions: { rgba },
+          }) => rgba(white, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
@@ -101,6 +110,6 @@ function Presentation() {
       </MKBox>
     </>
   );
-}
+};
 
 export default Presentation;
