@@ -8,10 +8,10 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import { Counters } from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import { Download } from "pages/Presentation/sections/Download";
-import routes from "routes";
+import { routes } from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-presentation-v2_compressed.png";
-import lang from "./lang.json";
+import { lang } from "./lang";
 import { useLanguage } from "hooks/useLanguage";
 
 declare module "@mui/system" {

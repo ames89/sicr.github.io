@@ -8,7 +8,7 @@ import MKButton from "components/MKButton";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import { Information } from "pages/LandingPages/AboutUs/sections/Information";
-import routes from "routes";
+import { routes } from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-about-us.jpg";
 import { ThreadsIcon } from "assets/icons/threads";

@@ -14,10 +14,11 @@ import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarD
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 import breakpoints from "assets/theme/base/breakpoints";
 import { tLanguage, useLanguage } from "hooks/useLanguage";
+import { IRoute } from "routes";
 
 interface DefaultNavbarProps {
   brand?: string;
-  routes?: any[];
+  routes?: IRoute[];
   transparent?: boolean;
   light?: boolean;
   action?: any;
@@ -120,7 +121,7 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
     // Render the dropdown menu that should be display as columns
     if (collapse && columns && name === dropdownName) {
       const calculateColumns = collapse.reduce((resultArray, item, index) => {
-        const chunkIndex = Math.floor(index / rowsPerColumn);
+        const chunkIndex = Math.floor(index / (rowsPerColumn || 1));
 
         if (!resultArray[chunkIndex]) {
           resultArray[chunkIndex] = [];
@@ -129,7 +130,7 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
         resultArray[chunkIndex].push(item);
 
         return resultArray;
-      }, []);
+      }, [] as any[]);
 
       template = (
         <Grid key={name} container spacing={3} py={1} px={1.5}>

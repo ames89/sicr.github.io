@@ -4,7 +4,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
-import routes from "routes";
+import { routes } from "routes";
 import { LanguageProvider } from "hooks/useLanguage";
 
 export default function App() {

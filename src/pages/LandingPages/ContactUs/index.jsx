@@ -4,7 +4,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import routes from "routes";
+import { routes } from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 import typography from "assets/theme/base/typography";
