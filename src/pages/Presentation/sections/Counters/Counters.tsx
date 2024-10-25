@@ -3,8 +3,12 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import MKBox from "components/MKBox";
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
+import { useLanguage } from "hooks/useLanguage";
+import { lang } from "./lang";
 
-function Counters() {
+export const Counters = () => {
+  const { language: activeLang } = useLanguage();
+
   return (
     <MKBox component="section" py={3}>
       <Container>
@@ -14,8 +18,8 @@ function Counters() {
               count={3.4}
               decimals={1}
               suffix="M T"
-              title="Desechos Sólidos"
-              description="Para 2050, se estima que se generarán 3.4 millones de toneladas de residuos urbanos al año."
+              title={lang[activeLang].title1}
+              description={lang[activeLang].desc1}
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
@@ -24,8 +28,8 @@ function Counters() {
               count={1.4}
               decimals={1}
               suffix="M T"
-              title="Desechos en Costa Rica"
-              description="Costa Rica produce 1.4 millones de toneladas de residuos sólidos anuales."
+              title={lang[activeLang].title2}
+              description={lang[activeLang].desc2}
             />
             <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
           </Grid>
@@ -41,6 +45,4 @@ function Counters() {
       </Container>
     </MKBox>
   );
-}
-
-export default Counters;
+};

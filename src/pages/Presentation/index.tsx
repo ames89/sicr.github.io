@@ -5,7 +5,7 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import Counters from "pages/Presentation/sections/Counters";
+import { Counters } from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
 import { Download } from "pages/Presentation/sections/Download";
 import routes from "routes";
