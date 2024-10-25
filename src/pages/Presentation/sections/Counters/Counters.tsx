@@ -37,8 +37,8 @@ export const Counters = () => {
             <DefaultCounterCard
               count={30}
               suffix="%"
-              title="Reciclaje en Costa Rica"
-              description="Solo el 30% de estos residuos sólidos se recicla."
+              title={lang[activeLang].title3}
+              description={lang[activeLang].desc3}
             />
           </Grid>
         </Grid>
