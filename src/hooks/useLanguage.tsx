@@ -1,6 +1,6 @@
 import React from "react";
 
-type tLanguage = "en" | "es";
+export type tLanguage = "en" | "es";
 
 export interface ILanguageOptions {
   persisted?: boolean;
