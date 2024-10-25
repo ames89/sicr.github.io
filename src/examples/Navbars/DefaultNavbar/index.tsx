@@ -13,8 +13,8 @@ import MKButton from "components/MKButton";
 import { DefaultNavbarDropdown } from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 import { DefaultNavbarMobile } from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 import breakpoints from "assets/theme/base/breakpoints";
-import { tLanguage, useLanguage } from "hooks/useLanguage";
 import { IRoute } from "routes";
+import { LanguageSelector } from "./LanguageSelector";
 
 interface DefaultNavbarProps {
   brand?: string;
@@ -26,33 +26,6 @@ interface DefaultNavbarProps {
   relative?: boolean;
   center?: boolean;
 }
-
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:2079540121.
-const LanguageSelector = () => {
-  const { language, setLanguage } = useLanguage();
-
-  const handleLanguageChange = (val: tLanguage) => {
-    setLanguage(val);
-  };
-
-  return (
-    <>
-      {(["es", "en"] as tLanguage[]).map((lang) => (
-        <MKButton
-          key={lang}
-          disabled={language === lang}
-          onClick={() => handleLanguageChange(lang)}
-          component="button"
-          variant={language === lang ? "outlined" : "text"}
-          color="info"
-          size="small"
-        >
-          {lang}
-        </MKButton>
-      ))}
-    </>
-  );
-};
 
 const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
   brand = "SICR",
