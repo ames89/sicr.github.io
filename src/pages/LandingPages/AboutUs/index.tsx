@@ -7,16 +7,17 @@ import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
-import Information from "pages/LandingPages/AboutUs/sections/Information";
-// import Team from "pages/LandingPages/AboutUs/sections/Team";
-// import Featuring from "pages/LandingPages/AboutUs/sections/Featuring";
-// import Newsletter from "pages/LandingPages/AboutUs/sections/Newsletter";
+import { Information } from "pages/LandingPages/AboutUs/sections/Information";
 import routes from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-about-us.jpg";
 import { ThreadsIcon } from "assets/icons/threads";
+import { useLanguage } from "hooks/useLanguage";
+import { lang } from "./lang";
 
 function AboutUs() {
+  const { language: activeLang } = useLanguage();
+
   return (
     <>
       <DefaultNavbar routes={routes} sticky />
@@ -61,13 +62,10 @@ function AboutUs() {
                 },
               })}
             >
-              Sistema Inteligente de Clasificación de Residuos (SICR)
+              {lang[activeLang].header}
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              Nos centramos en implementar modelos predictivos de machine learning para optimizar la
-              gestión de residuos en Costa Rica, abordando la creciente problemática de los desechos
-              sólidos y promoviendo la economía circular para maximizar el reciclaje y reutilización
-              de recursos, en alineación con los Objetivos de Desarrollo Sostenible
+              {lang[activeLang].body1}
             </MKTypography>
             <MKButton
               component={MuiLink}
@@ -77,10 +75,10 @@ function AboutUs() {
               color="default"
               sx={{ color: ({ palette: { dark } }) => dark.main }}
             >
-              Contáctanos
+              {lang[activeLang].contact}
             </MKButton>
             <MKTypography variant="h6" color="white" mt={6} mb={1}>
-              Consíguenos en
+              {lang[activeLang].findUs}
             </MKTypography>
             <MKBox display="flex" justifyContent="center" alignItems="center">
               <MKTypography
@@ -130,9 +128,6 @@ function AboutUs() {
         }}
       >
         <Information />
-        {/* <Team /> */}
-        {/* <Featuring /> */}
-        {/* <Newsletter /> */}
       </Card>
       <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
