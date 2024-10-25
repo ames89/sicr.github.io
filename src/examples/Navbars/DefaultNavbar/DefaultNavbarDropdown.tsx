@@ -1,33 +1,21 @@
-/**
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// prop-types is a library for typechecking of props
-import PropTypes from "prop-types";
-
-// react-router-dom components
 import { Link } from "react-router-dom";
-
-// @mui material components
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
-
-// Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultNavbarDropdown({
+interface DefaultNavbarDropdownProps extends React.HTMLAttributes<HTMLElement> {
+  name: string;
+  icon: any;
+  children?: any;
+  collapseStatus?: boolean;
+  light?: boolean;
+  href?: string;
+  route?: string;
+  collapse: boolean;
+}
+
+export const DefaultNavbarDropdown: React.FC<DefaultNavbarDropdownProps> = ({
   name,
   icon,
   children,
@@ -37,7 +25,7 @@ function DefaultNavbarDropdown({
   route,
   collapse,
   ...rest
-}) {
+}) => {
   const linkComponent = {
     component: "a",
     href,
@@ -93,27 +81,4 @@ function DefaultNavbarDropdown({
       )}
     </>
   );
-}
-
-// Setting default values for the props of DefaultNavbarDropdown
-DefaultNavbarDropdown.defaultProps = {
-  children: false,
-  collapseStatus: false,
-  light: false,
-  href: "",
-  route: "",
 };
-
-// Typechecking props for the DefaultNavbarDropdown
-DefaultNavbarDropdown.propTypes = {
-  name: PropTypes.string.isRequired,
-  icon: PropTypes.node.isRequired,
-  children: PropTypes.node,
-  collapseStatus: PropTypes.bool,
-  light: PropTypes.bool,
-  href: PropTypes.string,
-  route: PropTypes.string,
-  collapse: PropTypes.bool.isRequired,
-};
-
-export default DefaultNavbarDropdown;

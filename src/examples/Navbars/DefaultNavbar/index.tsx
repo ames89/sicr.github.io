@@ -10,8 +10,8 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
-import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
-import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+import { DefaultNavbarDropdown } from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
+import { DefaultNavbarMobile } from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 import breakpoints from "assets/theme/base/breakpoints";
 import { tLanguage, useLanguage } from "hooks/useLanguage";
 import { IRoute } from "routes";
@@ -64,8 +64,8 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
   relative = false,
   center = false,
 }): JSX.Element => {
-  const [dropdown, setDropdown] = useState(null);
-  const [dropdownEl, setDropdownEl] = useState(null);
+  const [dropdown, setDropdown] = useState<any>(null);
+  const [dropdownEl, setDropdownEl] = useState<any>(null);
   const [dropdownName, setDropdownName] = useState("");
   const [nestedDropdown, setNestedDropdown] = useState(null);
   const [nestedDropdownEl, setNestedDropdownEl] = useState(null);
@@ -94,9 +94,9 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
     return () => window.removeEventListener("resize", displayMobileNavbar);
   }, []);
 
-  const renderNavbarItems = routes?.map(({ name, icon, href, route, collapse }) => (
+  const renderNavbarItems = routes?.map(({ id, name, icon, href, route, collapse }) => (
     <DefaultNavbarDropdown
-      key={name}
+      key={id}
       name={name}
       icon={icon}
       href={href}

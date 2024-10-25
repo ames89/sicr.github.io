@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
 import Collapse from "@mui/material/Collapse";
 import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
+import { DefaultNavbarDropdown } from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
-function DefaultNavbarMobile({ routes, open }) {
+export interface DefaultNavbarMobileProps {
+  routes: any[];
+  open: boolean;
+}
+
+export const DefaultNavbarMobile = ({ routes, open }) => {
   const [collapse, setCollapse] = useState("");
 
-  const handleSetCollapse = (name) => (collapse === name ? setCollapse(false) : setCollapse(name));
+  const handleSetCollapse = (name) => (collapse === name ? setCollapse("") : setCollapse(name));
 
   const renderNavbarItems = routes.map(
     ({ name, icon, collapse: routeCollapses, href, route, collapse: navCollapse }) => (
@@ -19,7 +23,7 @@ function DefaultNavbarMobile({ routes, open }) {
         name={name}
         icon={icon}
         collapseStatus={name === collapse}
-        onClick={() => (href || route ? setCollapse(false) : handleSetCollapse(name))}
+        onClick={() => (href || route ? setCollapse("") : handleSetCollapse(name))}
         href={href}
         route={route}
         collapse={Boolean(navCollapse)}
@@ -114,18 +118,10 @@ function DefaultNavbarMobile({ routes, open }) {
   );
 
   return (
-    <Collapse in={Boolean(open)} timeout="auto" unmountOnExit>
+    <Collapse in={open} timeout="auto" unmountOnExit>
       <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
         {renderNavbarItems}
       </MKBox>
     </Collapse>
   );
-}
-
-// Typechecking props for the DefaultNavbarMobile
-DefaultNavbarMobile.propTypes = {
-  routes: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
-  open: PropTypes.oneOfType([PropTypes.bool, PropTypes.object]).isRequired,
 };
-
-export default DefaultNavbarMobile;
