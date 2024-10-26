@@ -8,10 +8,14 @@ import { routes } from "routes";
 import footerRoutes from "footer.routes";
 import bgImage from "assets/images/illustrations/illustration-reset.jpg";
 import typography from "assets/theme/base/typography";
+import { useLanguage } from "hooks/useLanguage";
+import { lang } from "./lang";
 
 const { fontWeightBold } = typography;
 
-function ContactUs() {
+const ContactUs = () => {
+  const { language: activeLang } = useLanguage();
+
   return (
     <>
       <MKBox position="fixed" top="0.5rem" width="100%">
@@ -50,21 +54,15 @@ function ContactUs() {
               mt={-3}
             >
               <MKTypography variant="h3" color="white">
-                Conéctate
+                {lang[activeLang].title1}
               </MKTypography>
             </MKBox>
             <MKBox p={3}>
               <MKTypography variant="body1" fontWeight={fontWeightBold} color="text" mb={3}>
-                Sé Parte de la Solución
+                {lang[activeLang].title2}
               </MKTypography>
               <MKTypography variant="body2" color="text" mb={3}>
-                Te invitamos a formar parte de nuestro innovador proyecto de optimización predictiva
-                de residuos. Con tu participación, podemos avanzar hacia una Costa Rica más
-                sostenible, aprovechar la inteligencia artificial para mejorar la gestión de
-                residuos y fomentar la economía circular. Juntos, transformaremos desafíos
-                ambientales en oportunidades, creando un impacto positivo en nuestra comunidad y el
-                medio ambiente. Únete a nosotros y sé parte del cambio hacia un futuro más verde y
-                próspero.
+                {lang[activeLang].body}
               </MKTypography>
               <MKBox width="100%" component="form" method="post" autoComplete="off">
                 <Grid container item justifyContent="center" xs={12} mt={5} mb={2}>
@@ -74,7 +72,7 @@ function ContactUs() {
                     color="info"
                     href="mailto:sicr@sicr-costarica.org"
                   >
-                    Contáctanos
+                    {lang[activeLang].button}
                   </MKButton>
                 </Grid>
               </MKBox>
@@ -87,6 +85,6 @@ function ContactUs() {
       </MKBox>
     </>
   );
-}
+};
 
 export default ContactUs;
