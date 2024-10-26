@@ -15,6 +15,7 @@ import { DefaultNavbarMobile } from "examples/Navbars/DefaultNavbar/DefaultNavba
 import breakpoints from "assets/theme/base/breakpoints";
 import { IRoute } from "routes";
 import { LanguageSelector } from "./LanguageSelector";
+import { useLanguage } from "hooks/useLanguage";
 
 interface DefaultNavbarProps {
   brand?: string;
@@ -37,6 +38,7 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
   relative = false,
   center = false,
 }): JSX.Element => {
+  const { language } = useLanguage();
   const [dropdown, setDropdown] = useState<any>(null);
   const [dropdownEl, setDropdownEl] = useState<any>(null);
   const [dropdownName, setDropdownName] = useState("");
@@ -67,10 +69,10 @@ const DefaultNavbar: React.FC<DefaultNavbarProps> = ({
     return () => window.removeEventListener("resize", displayMobileNavbar);
   }, []);
 
-  const renderNavbarItems = routes?.map(({ id, name, icon, href, route, collapse }) => (
+  const renderNavbarItems = routes?.map(({ lang, name, icon, href, route, collapse }) => (
     <DefaultNavbarDropdown
-      key={id}
-      name={name}
+      name={lang[language]}
+      key={name}
       icon={icon}
       href={href}
       route={route}

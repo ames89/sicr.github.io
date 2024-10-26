@@ -5,7 +5,7 @@ import ContactUs from "./layouts/pages/landing-pages/contact-us";
 import Presentation from "./layouts/pages/presentation";
 
 export interface IRoute {
-  id: string;
+  lang: { en: string; es: string };
   name: string;
   route: string;
   component: React.JSX.Element;
@@ -20,7 +20,7 @@ export interface IRoute {
 
 export const routes: IRoute[] = [
   {
-    id: "main",
+    lang: { en: "Main", es: "Principal" },
     name: "Principal",
     route: "/",
     component: <Presentation />,
@@ -29,14 +29,14 @@ export const routes: IRoute[] = [
     rowsPerColumn: 1,
   },
   {
-    id: "aboutUs",
+    lang: { en: "About us", es: "Acerca de nosotros" },
     name: "Acerca de Nosotros",
     route: "/about-us",
     component: <AboutUs />,
     icon: <Icon>people</Icon>,
   },
   {
-    id: "contactUs",
+    lang: { en: "Contact us", es: "Contáctanos" },
     name: "Contáctanos",
     route: "/contact-us",
     component: <ContactUs />,
