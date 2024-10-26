@@ -4,9 +4,11 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import { useLanguage } from "hooks/useLanguage";
 
-function DefaultFooter({ content }) {
-  const { brand, socials, menus, copyright } = content;
+const DefaultFooter = ({ content }) => {
+  const { language: activeLang } = useLanguage();
+  const { brand, socials, menus, copyright, copyrightLang } = content;
 
   return (
     <MKBox component="footer">
@@ -38,13 +40,13 @@ function DefaultFooter({ content }) {
               ))}
             </MKBox>
           </Grid>
-          {menus.map(({ name: title, items }) => (
+          {menus.map(({ name: title, items, lang }) => (
             <Grid key={title} item xs={6} md={2} sx={{ mb: 3 }}>
               <MKTypography display="block" variant="button" fontWeight="bold" mb={1}>
-                {title}
+                {lang[activeLang]}
               </MKTypography>
               <MKBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
-                {items.map(({ name, route, href }) => (
+                {items.map(({ name, route, href, lang }) => (
                   <MKBox key={name} component="li" p={0} m={0} lineHeight={1.25}>
                     {href ? (
                       <MKTypography
@@ -55,7 +57,7 @@ function DefaultFooter({ content }) {
                         variant="button"
                         fontWeight="regular"
                       >
-                        {name}
+                        {lang[activeLang]}
                       </MKTypography>
                     ) : (
                       <MKTypography
@@ -64,7 +66,7 @@ function DefaultFooter({ content }) {
                         variant="button"
                         fontWeight="regular"
                       >
-                        {name}
+                        {lang[activeLang]}
                       </MKTypography>
                     )}
                   </MKBox>
@@ -73,13 +75,13 @@ function DefaultFooter({ content }) {
             </Grid>
           ))}
           <Grid item xs={12} sx={{ textAlign: "center", my: 3 }}>
-            {copyright}
+            {copyright(copyrightLang[activeLang])}
           </Grid>
         </Grid>
       </Container>
     </MKBox>
   );
-}
+};
 
 // Typechecking props for the DefaultFooter
 DefaultFooter.propTypes = {
