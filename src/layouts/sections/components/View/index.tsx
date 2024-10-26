@@ -9,7 +9,7 @@ const View = ({ children, height = "auto", ...rest }) => {
           width="100%"
           height={height}
           borderRadius="xl"
-          sx={{ overflowX: "hidden", overflowY: "scroll" }}
+          sx={{ overflowX: "hidden", overflowY: "auto" }}
         >
           {children}
         </MKBox>

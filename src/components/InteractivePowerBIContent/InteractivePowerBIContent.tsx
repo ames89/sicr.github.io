@@ -5,6 +5,8 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import { useLanguage } from "hooks/useLanguage";
+import { lang } from "./lang";
 
 interface InteractivePowerBIContentProps {
   title?: string;
@@ -19,10 +21,12 @@ export const InteractivePowerBIContent: React.FC<InteractivePowerBIContentProps>
   urlGraph = "",
   invert = false,
 }) => {
+  const { language: activeLang } = useLanguage();
+
   return (
     <View>
       <MKBox component="section" py={{ xs: 3, md: 2 }}>
-        <Container>
+        <Container className="angel1">
           <Grid
             container
             alignItems="center"
@@ -69,8 +73,7 @@ export const InteractivePowerBIContent: React.FC<InteractivePowerBIContentProps>
                       },
                     }}
                   >
-                    Leer más
-                    <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+                    {lang[activeLang].link} <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
                   </MKTypography>
                 </>
               ) : null}
