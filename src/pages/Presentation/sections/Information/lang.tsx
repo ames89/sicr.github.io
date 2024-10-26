@@ -7,7 +7,8 @@ export const lang = {
     body2:
       "La creciente producción de residuos sólidos en Costa Rica, evidenciada por los datos históricos de 2011 a 2023, exige la implementación de políticas públicas más efectivas. Este problema, estrechamente ligado al crecimiento poblacional y al modelo de consumo actual, ha superado la capacidad de gestión de los residuos en el país. Un estudio del Ministerio de Salud de Costa Rica indica que el aumento en la generación de residuos ha sido del 11% anual, lo que subraya la necesidad de promover la economía circular y la reducción en la fuente (Portal MS, 2022).",
     title3: "Gestores",
-    title4: "SICR",
+    body3:
+      "A pesar de los esfuerzos del gobierno costarricense por fomentar el reciclaje a través de una red de gestores, un análisis de la distribución geográfica de estos servicios y su capacidad instalada (Rivas SICR, 2024) indica que existen zonas del país con una oferta insuficiente. Esto limita la capacidad de gestionar de manera eficiente los residuos generados y reduce las oportunidades de valorización. La expansión de la red de gestores hacia nuevas áreas geográficas, junto con la creación de alianzas estratégicas, permitiría aprovechar al máximo los residuos generados y promover la economía circular.",
   },
   en: {
     title1: "Historical data",
@@ -17,6 +18,7 @@ export const lang = {
     body2:
       "The growing production of solid waste in Costa Rica, evidenced by historical data from 2011 to 2023, demands the implementation of more effective public policies. This problem, closely linked to population growth and the current consumption model, has exceeded the country’s waste management capacity. A study by the Ministry of Health of Costa Rica indicates that the increase in waste generation has been 11% annually, underscoring the need to promote a circular economy and source reduction (MS Portal, 2022).",
     title3: "Managers",
-    title4: "SICR",
+    body3:
+      "Despite the efforts of the Costa Rican government to promote recycling through a network of waste managers, an analysis of the geographical distribution of these services and their installed capacity (Rivas SICR, 2024) indicates that there are areas of the country with insufficient offerings. This limits the ability to manage generated waste efficiently and reduces opportunities for recovery. Expanding the network of waste managers to new geographical areas, along with the creation of strategic partnerships, would allow for maximizing the use of generated waste and promoting a circular economy.",
   },
 };

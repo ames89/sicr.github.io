@@ -24,8 +24,8 @@ export const Information = () => {
             urlGraph="https://app.powerbi.com/view?r=eyJrIjoiOWRhNjRiMWItZjg2My00ODJhLWEzNjItOTg1NjVkM2Q0ZGM3IiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=a0beff55972bb1a7ab6d"
           />
           <InteractivePowerBIContent
-            title="Gestores"
-            body="A pesar de los esfuerzos del gobierno costarricense por fomentar el reciclaje a través de una red de gestores, un análisis de la distribución geográfica de estos servicios y su capacidad instalada (Rivas SICR, 2024) indica que existen zonas del país con una oferta insuficiente. Esto limita la capacidad de gestionar de manera eficiente los residuos generados y reduce las oportunidades de valorización. La expansión de la red de gestores hacia nuevas áreas geográficas, junto con la creación de alianzas estratégicas, permitiría aprovechar al máximo los residuos generados y promover la economía circular."
+            title={lang[activeLang].title3}
+            body={lang[activeLang].body3}
             urlGraph="https://app.powerbi.com/view?r=eyJrIjoiZWJmYzMyNTQtZmQ4Yy00NjVhLWE0ZWMtMGEzOTc3N2E2ZTg3IiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=9f3d77f41cd6ebbeebe4"
           />
           <InteractivePowerBIContent
