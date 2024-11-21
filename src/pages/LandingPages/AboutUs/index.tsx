@@ -13,6 +13,8 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-about-us.jpg";
 import { ThreadsIcon } from "assets/icons/threads";
 import { useLanguage } from "hooks/useLanguage";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { lang } from "./lang";
 
 function AboutUs() {
@@ -88,7 +90,7 @@ function AboutUs() {
                 href="https://www.facebook.com/profile.php?id=61566447437342"
                 mr={3}
               >
-                <i className="fab fa-facebook" />
+                <FacebookIcon />
               </MKTypography>
               <MKTypography
                 component="a"
@@ -97,14 +99,13 @@ function AboutUs() {
                 href="https://www.instagram.com/sicr.ai"
                 mr={3}
               >
-                <i className="fab fa-instagram" />
+                <InstagramIcon />
               </MKTypography>
               <MKTypography
                 component="a"
                 variant="body1"
                 color="white"
                 href="https://www.threads.net/@sicr.ai"
-                style={{ display: "flex", alignItems: "center" }}
               >
                 <ThreadsIcon />
               </MKTypography>
