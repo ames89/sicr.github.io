@@ -15,23 +15,20 @@ export const Information = () => {
           <InteractivePowerBIContent
             title={lang[activeLang].title1}
             body={lang[activeLang].body1}
-            urlGraph="https://app.powerbi.com/view?r=eyJrIjoiMjVjZjYyNGUtNzU2Yy00MjJlLTk0MjctZWI3NmQzMWY4YWI2IiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=2aa358ee053d147332bb"
+            urlGraph={lang[activeLang].url1}
           />
           <InteractivePowerBIContent
             invert
             title={lang[activeLang].title2}
             body={lang[activeLang].body2}
-            urlGraph="https://app.powerbi.com/view?r=eyJrIjoiOWRhNjRiMWItZjg2My00ODJhLWEzNjItOTg1NjVkM2Q0ZGM3IiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=a0beff55972bb1a7ab6d"
+            urlGraph={lang[activeLang].url2}
           />
           <InteractivePowerBIContent
             title={lang[activeLang].title3}
             body={lang[activeLang].body3}
-            urlGraph="https://app.powerbi.com/view?r=eyJrIjoiZWJmYzMyNTQtZmQ4Yy00NjVhLWE0ZWMtMGEzOTc3N2E2ZTg3IiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=9f3d77f41cd6ebbeebe4"
+            urlGraph={lang[activeLang].url3}
           />
-          <InteractivePowerBIContent
-            title="SICR"
-            urlGraph="https://app.powerbi.com/view?r=eyJrIjoiODcwYTJiMjEtZDFhMy00YTMwLWIzMDItZTE5NTBjMWU0NGEzIiwidCI6IjY0M2MzNTRjLThlMzMtNDNiMS05YTZiLTM2M2M1Mjk1OWI0YiIsImMiOjR9&pageName=c833276eb095ee00c6bd"
-          />
+          <InteractivePowerBIContent title="SICR" urlGraph={lang[activeLang].url4} />
         </Grid>
       </Container>
     </MKBox>
