@@ -1,6 +1,7 @@
 // @mui icons
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { ThreadsIcon } from "assets/icons/threads";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
@@ -18,15 +19,15 @@ export default {
   },
   socials: [
     {
-      icon: <FacebookIcon sx={{ width: "20px", height: "20px" }} />,
+      icon: <FacebookIcon titleAccess="Facebook page" sx={{ width: "20px", height: "20px" }} />,
       link: "https://www.facebook.com/profile.php?id=61566447437342",
     },
     {
-      icon: <i className="fab fa-instagram" style={{ width: "20px", height: "20px" }} />,
+      icon: <InstagramIcon titleAccess="Instagram page" sx={{ width: "20px", height: "20px" }} />,
       link: "https://www.instagram.com/sicr.ai",
     },
     {
-      icon: <ThreadsIcon sx={{ width: "20px", height: "20px" }} />,
+      icon: <ThreadsIcon titleAccess="Threads page" sx={{ width: "20px", height: "20px" }} />,
       link: "https://www.threads.net/@sicr.ai",
     },
   ],
